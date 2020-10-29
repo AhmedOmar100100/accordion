@@ -1,0 +1,56 @@
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.container h2 {
+    background-color: #1b262c;
+    color: #fff;
+    padding: 25px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.accordion {
+    width: 100%;
+    border: none;
+    padding: 20px 20px;
+    background-color: #bbe1fa;
+    color: #1b262c;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .4s;
+    outline: none;
+}
+
+.accordion::after {
+    content: '\002B';
+    float: right;
+    margin-right: 3px;
+    color: #070c0f;
+    font-weight: 600;
+}
+
+.active::after {
+    content: '\2212';
+}
+
+.accordion:hover {
+    background-color: #3b8bc0;
+}
+
+.accordion:hover.accordion::after {
+    color: #fff;
+}
+
+.desc {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px 22px;
+    line-height: 1.6;
+    word-spacing: 4px;
+    font-size: 17px;
+    transition: .3s;
+}
